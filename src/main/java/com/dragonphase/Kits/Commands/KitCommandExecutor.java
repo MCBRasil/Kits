@@ -46,7 +46,7 @@ public class KitCommandExecutor implements CommandExecutor{
                             }else{
                                 int remaining = Kits.getRemainingTime(player);
                                 String seconds = remaining == 1 ? " second" : " seconds";
-                                player.sendMessage(Message.warning("You must wait " + remaining + seconds + " before spawning another kit."));
+                                player.sendMessage(Message.warning("你已經選擇了職業,不可以選擇其他職業了"));
                                 return false;
                             }
                         }
